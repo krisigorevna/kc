@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS Modern | 3 языка</title>
+
+    <!-- Подключаем отдельный CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ====== ШАПКА / МЕНЮ ====== -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">CS<span>•</span>MODERN</div>
+
+            <!-- Переключатель языков -->
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="ru">RU</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="kz">KZ</button>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active" data-key="nav_home">Главная</a>
+                <a href="#about" class="nav-link" data-key="nav_about">О нас</a>
+                <a href="#services" class="nav-link" data-key="nav_services">Услуги</a>
+                <a href="#portfolio" class="nav-link" data-key="nav_portfolio">Портфолио</a>
+                <a href="#contact" class="nav-link" data-key="nav_contact">Контакты</a>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="#contact" class="btn-outline" data-key="nav_cta">Связаться</a>
+            </div>
+
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====== ОСНОВНОЙ КОНТЕНТ ====== -->
+    <main>
+
+        <!-- HERO -->
+        <section id="home" class="fullscreen hero">
+            <div class="hero-content">
+                <h1 data-key="hero_title">Твой <span>идеальный</span> сайт</h1>
+                <p data-key="hero_subtitle">Современный дизайн, вдохновлённый CS. Полноэкранный опыт.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn-primary" data-key="hero_btn1">Портфолио</a>
+                    <a href="#about" class="btn-secondary" data-key="hero_btn2">Узнать больше</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">↓</div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="fullscreen about">
+            <div class="container">
+                <h2 data-key="about_title">О <span>проекте</span></h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p data-key="about_p1">Мы создаём цифровые решения с душой. Каждая линия кода — как тактика в CS: стратегически, чисто и эффективно.</p>
+                        <p data-key="about_p2">Наш подход сочетает минимализм, скорость и внимание к деталям. Тёмный градиент меню подчёркивает стиль.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label" data-key="about_stat1">проектов</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label" data-key="about_stat2">команды</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label" data-key="about_stat3">отдача</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="fullscreen services">
+            <div class="container">
+                <h2 data-key="services_title">Наши <span>услуги</span></h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3 data-key="service1_title">Веб-разработка</h3>
+                        <p data-key="service1_desc">Современные сайты и приложения с нуля. Адаптивность и производительность.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎯</div>
+                        <h3 data-key="service2_title">UX/UI дизайн</h3>
+                        <p data-key="service2_desc">Интерфейсы, которые нравятся пользователям. Внимание к каждой детали.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3 data-key="service3_title">Оптимизация</h3>
+                        <p data-key="service3_desc">Скорость загрузки, SEO и чистота кода. Как в киберспорте — только победа.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="fullscreen portfolio">
+            <div class="container">
+                <h2 data-key="portfolio_title">Портфолио</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-img" style="background: linear-gradient(145deg, #1a1a1a, #3a3a3a);"></div>
+                        <h4 data-key="portfolio1_title">Проект Alpha</h4>
+                        <p data-key="portfolio1_desc">Корпоративный сайт</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img" style="background: linear-gradient(145deg, #2a2a2a, #4a4a4a);"></div>
+                        <h4 data-key="portfolio2_title">Проект Beta</h4>
+                        <p data-key="portfolio2_desc">Интернет-магазин</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img" style="background: linear-gradient(145deg, #0a0a0a, #2a2a2a);"></div>
+                        <h4 data-key="portfolio3_title">Проект Gamma</h4>
+                        <p data-key="portfolio3_desc">Лендинг + анимация</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="fullscreen contact">
+            <div class="container">
+                <h2 data-key="contact_title">Связь <span>с нами</span></h2>
+                <div class="contact-wrapper">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Ваше имя" data-key="contact_name" />
+                        <input type="email" placeholder="E-mail" data-key="contact_email" />
+                        <textarea rows="4" placeholder="Сообщение..." data-key="contact_message"></textarea>
+                        <button type="submit" class="btn-primary" data-key="contact_btn">Отправить</button>
+                    </form>
+                    <div class="contact-info">
+                        <p>📧 hello@csmodern.dev</p>
+                        <p>📱 +7 (999) 123-45-67</p>
+                        <p>📍 Москва, ул. Киберспортивная, 1</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container">
+            <p data-key="footer_copyright">© 2026 CS Modern. Все права защищены.</p>
+            <p class="footer-tag">#CSstyle #градиент #fullscreen</p>
+        </div>
+    </footer>
+
+    <!-- ====== ЯЗЫКОВОЙ JS ====== -->
+    <script src="lang.js"></script>
+</body>
+</html>
